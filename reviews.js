@@ -5,12 +5,13 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "XXX",
-    authDomain: "XXX.firebaseapp.com",
-    projectId: "XXX",
-    storageBucket: "XXX.appspot.com",
-    messagingSenderId: "XXX",
-    appId: "XXX"
+    apiKey: "AIzaSyBhcxPD_n_Nt-R2SkorGm_Wifclx8oP-1A",
+    authDomain: "hair-2bbe7.firebaseapp.com",
+    projectId: "hair-2bbe7",
+    storageBucket: "hair-2bbe7.firebasestorage.app",
+    messagingSenderId: "665749643212",
+    appId: "1:665749643212:web:8a92e4b586f83b4fc28769",
+    measurementId: "G-E2YT8Z4R4N"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -47,3 +48,4 @@ form.addEventListener("submit", async (e) => {
     form.reset();
     form.rating.value = 5;
 });
+
