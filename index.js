@@ -32,8 +32,8 @@ function linkActive() {
 
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
-    duration: 1600,
+    distance: '30px',
+    duration: 1300,
     delay: 300,
 })
 
@@ -65,4 +65,5 @@ function scrollHeader() {
         scrollHeader.classList.remove('scroll-header')
     }
 }
+
 window.addEventListener('scroll', scrollHeader);
