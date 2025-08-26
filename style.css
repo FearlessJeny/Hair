@@ -644,6 +644,107 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	margin-top: 2rem;
 }
 /* End Test */
+
+/* Start Otzivi */
+.reviews {
+  padding: 7rem 1.5rem;
+  background: #db8888;
+}
+
+.reviews-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.review-form {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btnot {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background: var(--main-color);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnot:hover {
+  background: #333;
+}
+
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end; /* новые будут добавляться слева */
+  flex-direction: row;  
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  flex: 1 1 280px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.review-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.review-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.review-card .stars {
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  color: gold;
+}
+
+/* End Otzivi */
+
 /* Footer */
 .footer-list {
 	width: 100%;
@@ -857,3 +958,4 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		grid-template-columns: unset;
 	}
 }
+
