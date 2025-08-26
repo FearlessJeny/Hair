@@ -5,13 +5,13 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBhcxPD_n_Nt-R2SkorGm_Wifclx8oP-1A",
-    authDomain: "hair-2bbe7.firebaseapp.com",
-    projectId: "hair-2bbe7",
-    storageBucket: "hair-2bbe7.firebasestorage.app",
-    messagingSenderId: "665749643212",
-    appId: "1:665749643212:web:8a92e4b586f83b4fc28769",
-    measurementId: "G-E2YT8Z4R4N"
+  apiKey: "AIzaSyDekKj4gyCG6-d3slECnuNFkLWr9uWiOLM",
+  authDomain: "masterreviews-d377a.firebaseapp.com",
+  databaseURL: "https://masterreviews-d377a-default-rtdb.firebaseio.com",
+  projectId: "masterreviews-d377a",
+  storageBucket: "masterreviews-d377a.firebasestorage.app",
+  messagingSenderId: "955941878615",
+  appId: "1:955941878615:web:6a9fd56d1b4e62e36b1c12"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -48,4 +48,5 @@ form.addEventListener("submit", async (e) => {
     form.reset();
     form.rating.value = 5;
 });
+
 
