@@ -508,6 +508,30 @@
     </section>
     <!-- End Отзывы САМЫЕ Section -->
 
+ <!-- Start Otzivi -->
+    <section class="reviews" id="reviews">
+        <h2 class="reviews-title">Отзывы клиентов</h2>
+    
+        <form id="reviewForm" class="review-form">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <textarea id="message" placeholder="Ваш отзыв" required></textarea>
+    
+            <div class="stars">
+                <label><input type="radio" name="rating" value="1"> 1⭐</label>
+                <label><input type="radio" name="rating" value="2"> 2⭐</label>
+                <label><input type="radio" name="rating" value="3"> 3⭐</label>
+                <label><input type="radio" name="rating" value="4"> 4⭐</label>
+                <label><input type="radio" name="rating" value="5" checked> 5⭐</label>
+            </div>
+    
+            <button type="submit" class="btnot">Оставить отзыв</button>
+        </form>
+    
+        <div class="reviews-list" id="reviewsList"></div>
+    </section>
+
+    
+
     <!-- Start Footer Section -->
     <footer class="footer" id="contact">
         <div class="footer-list">
@@ -548,5 +572,6 @@
 
     <script src="index.js"></script>
 </body>
+
 
 </html>
