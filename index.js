@@ -67,3 +67,45 @@ function scrollHeader() {
 }
 
 window.addEventListener('scroll', scrollHeader);
+
+
+
+// Otzivi
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("reviewForm");
+    const list = document.getElementById("reviewsList");
+    let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+
+    function renderReviews() {
+        list.innerHTML = "";
+        reviews.forEach(r => {
+            const card = document.createElement("div");
+            card.className = "review-card";
+            card.innerHTML = `
+        <h3>${r.name}</h3>
+        <div class="stars">${"⭐".repeat(r.rating)}</div>
+        <p>${r.message}</p>
+      `;
+            list.prepend(card); // новые слева
+        });
+    }
+
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        const name = document.getElementById("name").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const rating = form.rating.value;
+
+        if (name && message) {
+            reviews.unshift({ name, message, rating }); // добавляем в начало
+            localStorage.setItem("reviews", JSON.stringify(reviews));
+            renderReviews();
+            form.reset();
+            form.rating.value = 5; // сброс на 5 звёзд
+        }
+    });
+
+    renderReviews();
+});
+
